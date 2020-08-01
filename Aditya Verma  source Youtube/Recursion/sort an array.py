@@ -7,7 +7,6 @@ sort array
 
 
 def insertinarr(arr,x):
-
     if arr == [] or arr[-1]<=x:
         arr.append(x)
         return

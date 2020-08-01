@@ -1,0 +1,1 @@
+def knapsack(array, length, pos)
