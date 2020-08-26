@@ -29,6 +29,6 @@ def next_minimum_to_left(array):
             stack.append(array[i])
     return result
 
-array = [1,3,2,4]
+array = [1,3,5,4]
 
 print(next_minimum_to_left(array))

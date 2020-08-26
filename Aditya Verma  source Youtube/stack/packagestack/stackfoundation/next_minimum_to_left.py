@@ -1,18 +1,9 @@
-"""
-
-this is the same variant of that question 
-array  = [1, 3, 2, 4]
-
-resultant array will [-1, 2, -1, -1]
-
-"""
-
-def next_minimum_to_right(array):
+def next_minimum_to_left(array):
     stack = []
     result = []
     n = len(array)
-    for i in range(n-1,-1,-1):
-        if len(stack)==0:
+    for i in range(n):
+        if len(stack) == 0:
             result.append(-1)
             stack.append(array[i])
         elif(stack[-1]<array[i]):
@@ -27,8 +18,4 @@ def next_minimum_to_right(array):
             else:
                 result.append(stack[-1])
             stack.append(array[i])
-    return result[::-1]
-
-array = [1,3,2,4]
-
-print(next_minimum_to_right(array))
+    return result

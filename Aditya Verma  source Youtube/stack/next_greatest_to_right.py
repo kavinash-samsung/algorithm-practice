@@ -12,7 +12,7 @@ next greater element
 
 
 
-def count_to_right(arr):
+def next_greater_to_right(arr):
     n = len(arr)
     result = []
     stack = []
@@ -39,4 +39,4 @@ def count_to_right(arr):
 
 array = [1,3,2,4]
 
-print(count_to_right(array))
+print(next_greater_to_right(array))
