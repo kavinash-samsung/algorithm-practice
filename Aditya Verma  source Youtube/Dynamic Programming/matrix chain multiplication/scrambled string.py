@@ -26,6 +26,8 @@ def scrambled_string(string1, string2):
     dictx[(string1,string2)] = False
     return False
 
+
+
 str1 = 'great'
 str2 = 'aterg'
 
